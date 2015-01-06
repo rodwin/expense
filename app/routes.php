@@ -11,15 +11,21 @@
 |
 */
 
-Route::get('/', function()
+
+Route::get('/', function() use ($app)
 {
-    
+
     $users = new Expense\Admin\Users\UserRepository();
-    
-//    pr($users->findByEmail('rodwinlising@gmail.com'));
-//    pr($users->findByID(2));
-//    die();
+
+    $users->findByEmail('rodwinlising@gmail.com');
+    $users->findByID(2);
+    Profiler::addCheckpoint();
     return View::make('hello');
+});
+
+Route::get('/test', function() use ($app)
+{
+    Profiler::disable();
 });
 
 Route::get('users', array('uses' => 'UsersController@getIndex'));

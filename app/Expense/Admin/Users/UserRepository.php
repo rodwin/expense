@@ -13,7 +13,7 @@ class UserRepository implements UserRepositoryInterface {
     }
 
     public function findByID($id) {
-        
+
         return User::findOrFail($id);
         
     }

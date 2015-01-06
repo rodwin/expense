@@ -6,18 +6,18 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-                "laravelbook/ardent": "2.*",
+        "laravelbook/ardent": "2.*",
 		"barryvdh/laravel-debugbar": "~1.8",
-                "barryvdh/laravel-ide-helper": "dev-master"
+        "barryvdh/laravel-ide-helper": "dev-master"
 	},
-        "require-dev": {
-            "way/generators": "~2.0",
-            "mockery/mockery": "dev-master@dev"
-        },
+    "require-dev": {
+        "way/generators": "~2.0",
+        "mockery/mockery": "dev-master@dev"
+    },
 	"autoload": {
-                "psr-0": {
-                    "Expense": "app/"
-                },
+        "psr-0": {
+            "Expense": "app/"
+        },
 		"classmap": [
 			"app/Expense",
 			"app/commands",

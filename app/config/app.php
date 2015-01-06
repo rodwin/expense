@@ -121,9 +121,10 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-                'Expense\Admin\Users\UserServiceProvider',
-                'Barryvdh\Debugbar\ServiceProvider',
-                'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Expense\Admin\Users\UserServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Solitude\Profiler\ProfilerServiceProvider',
 
 	),
 
@@ -191,7 +192,8 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
-                'Debugbar'          => 'Barryvdh\Debugbar\Facade',
+        'Debugbar'          => 'Barryvdh\Debugbar\Facade',
+        'Profiler'          => 'Solitude\Profiler\Facades\Profiler',
 
 	),
 
